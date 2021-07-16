@@ -1,0 +1,10 @@
+        pref[0]=a[0];
+        for(i=1;i<n-1;i++)
+        {
+            pref[i]=min(pref[i-1],a[i]);
+        }
+        suf[n-1]=a[n-1];
+        for(i=n-2;i>=1;i--)
+        {
+            suf[i]=min(suf[i+1],a[i]);
+        }
